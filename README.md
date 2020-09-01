@@ -54,7 +54,7 @@ The following schedule is tentative, and is subject to change over the course.
 
 | Week | Topic | Assignment | Due Date |
 |---| --- | --- | --- | 
-| 1 (9/2)      | [Introduction](./lectures/01-intro/intro.html), [Julia Intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaintro.ipynb) [[notebook](./lectures/02-juliaintro/juliaintro.ipynb)], [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?        3filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | | | 
+| 1 (9/2)      | [Introduction](./lectures/01-intro/intro.html), [Julia Intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaintro.ipynb) [[notebook](./lectures/02-juliaintro/juliaintro.ipynb)], [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | | | 
 | 2 (9/7, 9/9)     | [Computer Arithmetic](./lectures/03-arith/arith.html) [[jupyter](./lectures/03-arith/arith.ipynb)] | [Homework 1](.) [[notebook](.)] | 2020-09-22 |
 | 3 (9/14, 9/16)    | [Algorithm](.) [[notebook](.)], Numerical Linear Algebra: [BLAS](.) [[notebook](.)], [Triangular systems](.) [[notebook](.)]|  |  |
 | 4 (9/21, 9/23)    | Numerical Linear Algebra: [LU decomposition](.) [[notebook](.)], [Cholesky](.) [[notebook](.)], [QR decomposition](.) [[notebook](.)] | [Homework 2](.) [[notebook](.)] | 2020-10-16  |
