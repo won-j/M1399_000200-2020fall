@@ -1,20 +1,10 @@
-# M1399.000200 Advanced Statistical Computing @ SNU
+# M1399.000200 Advanced Statistical Computing @ SNU 2020
 
 This is the course website for M1399.000200: "Advanced Statistical Computing " at Seoul National University in Fall 2020. Assignments, lecture notes, and open source code will all be available on this website.
 
 ## Announcements
 
-* 2019-11-26: Homework 4 posted. Note the deadline.
-* 2019-11-14: Homework 3 Q2-2 has been clarified. Check out the [link](./hw/hw3/hw03.html).
-* 2019-10-31: Homework 3 updated.
-* 2019-10-30: Homework 3 posted. Note the new deadline.
-* 2019-10-10: Notes on the final project is posted. Check out the [link](./project/project.md).
-* 2019-10-10: Homework 2 updated: deadline extended to 2019-10-16.
-* 2019-09-25: Homework 2 posted. May go through a few rounds of refinement.
-* 2019-09-17: Homework 1 updated: Q7 and Q8 are carried over to HW2; new Q7 has been added.
-* 2019-09-09: Homework 1 updated.
-* 2019-09-05: Homework 1 posted.
-* 2019-09-04: Class time changed.
+* 2020-09-02: course will be given online. Mostly real-time, but sometimes pre-recorded.
 
 ## Instructor 
 
@@ -22,7 +12,7 @@ Joong-Ho (Johann) Won
 
 **Email**: wonj AT stats DOT snu DOT ac DOT kr
 
-**Class Time**: Mondays/Wednesdays 9:40 - 10:55 in 25-204
+**Class Time**: Mondays/Wednesdays 9:40 - 10:55 @ online
 
 **Office Hours**: By appointment.
 
@@ -64,20 +54,21 @@ The following schedule is tentative, and is subject to change over the course.
 
 | Week | Topic | Assignment | Due Date |
 |---| --- | --- | --- | 
-| 1 (9/2, 9/4)      | [Introduction](./lectures/01-intro/intro.html), [Julia ](./lectures/02-juliaintro/juliaintro.html) [[jupyter](./lectures/02-juliaintro/juliaintro.ipynb)], [Plotting](./lectures/02-juliaintro/juliaplots.html) [[jupyter](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | [Homework 1](./hw/hw1/hw01.html) [[jupyter](./hw/hw1/hw01.ipynb)] | 9/22/2019 |
-| 2 (9/9, 9/11)     | [Computer Arithmetic](./lectures/03-arith/arith.html) [[jupyter](./lectures/03-arith/arith.ipynb)] |  |   |
-| 3 (9/16, 9/18)    | [Algorithm](./lectures/04-algo/algo.html) [[jupyter](./lectures/04-algo/algo.ipynb)], Numerical Linear Algebra: [BLAS](./lectures/05-numalgintro/numalgintro.html) [[jupyter](./lectures/05-numalgintro/numalgintro.ipynb)], [Triangular systems](./lectures/06-trisys/trisys.html) [[jupyter](./lectures/06-trisys/trisys.ipynb)]|  |  |
-| 4 (9/23, 9/25)    | Numerical Linear Algebra: [LU decomposition](./lectures/07-gelu/gelu.html) [[jupyter](./lectures/07-gelu/gelu.ipynb)], [Cholesky](./lectures/08-chol/chol.html) [[jupyter](./lectures/08-chol/chol.ipynb)], [QR decomposition](./lectures/09-qr/qr.html) [[jupyter](./lectures/09-qr/qr.ipynb)] | [Homework 2](./hw/hw2/hw02.html) [[jupyter](./hw/hw2/hw02.ipynb)] | 10/16/2019  |
-| 5 (9/30, 10/2)    | [Linear regression](./lectures/10-linreg/linreg.html) [[jupyter](./lectures/10-linreg/linreg.ipynb)], Iterative methods: [Basics](./lectures/11-iterative/iterative.html) [[jupyter](./lectures/11-iterative/iterative.ipynb)] | |  |  |
-| 6 (10/7)          | [Conjugate Gradient](./lectures/12-cg/cg.html) [[jupyter](./lectures/12-cg/cg.ipynb)] |  |  |
-| 7 (10/15, 10/17)  | [Eigenvalue and singular value decompositions](./lectures/13-eigsvd/eigsvd.html) [[jupyter](./lectures/13-eigsvd/eigsvd.ipynb)]  | [Final Project Proposal](./project/project.md)  | 10/26/2019  |
-| 8 (10/21, 10/23)  | [Introduction to mathematical optimization](./lectures/14-optmintro/optmintro.html), [Optimization in Julia](./lectures/15-juliaopt/juliaopt.html) [[jupyter]](./lectures/15-juliaopt/juliaopt.ipynb) | | |
-| 9 (10/28, 10/30)  | [Linear programming](./lectures/16-lp/lp.html) [[jupyter]](./lectures/16-lp/lp.ipynb), [Quadratic programming](./lectures/17-qp/qp.html) [[jupyter]](./lectures/17-qp/qp.ipynb)  | [Homework 3](./hw/hw3/hw03.html) [[jupyter](./hw/hw3/hw03.ipynb)] | 11/17/2019 |
-| 10 (11/4, 11/6)   | [Second-order cone programming](./lectures/18-socp/socp.html) [[jupyter]](./lectures/18-socp/socp.ipynb), [Semidefinite programming](./lectures/19-sdp/sdp.html) [[jupyter]](./lectures/19-sdp/sdp.ipynb) |  |  |
-| 11 (11/11, 11/13) | [Geometric programming](./lectures/20-gp/gp.html) [[jupyter]](./lectures/20-gp/gp.ipynb), [KKT conditions](./lectures/21-kkt/kkt.html) | | |
-| 12 (11/18, 11/20) | [Newton's method, nonlinear regression](./lectures/22-newton/newton.html) [[jupyter]](./lectures/22-newton/newton.ipynb)  | |  |
-| 13 (11/25, 11/27) | [First-order methods](./lectures/23-first/first.html) | [Homework 4](./hw/hw4/hw04.html) [[jupyter](./hw/hw4/hw04.ipynb)] | 12/15/2019 |
-| 14 (12/2, 12/4)   | [MM algorithms](./lectures/24-mm/mm.html) |  |  |
-| 15 (12/9, 12/11)  | Final Projects      |  |  |
+| 1 (9/2)      | [Introduction](./lectures/01-intro/intro.html), [Julia Intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaintro.ipynb) [[notebook](./lectures/02-juliaintro/juliaintro.ipynb)], [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?        3filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | | | 
+| 2 (9/7, 9/9)     | [Computer Arithmetic](./lectures/03-arith/arith.html) [[jupyter](./lectures/03-arith/arith.ipynb)] | [Homework 1](.) [[notebook](.)] | 2020-09-22 |
+| 3 (9/14, 9/16)    | [Algorithm](.) [[notebook](.)], Numerical Linear Algebra: [BLAS](.) [[notebook](.)], [Triangular systems](.) [[notebook](.)]|  |  |
+| 4 (9/21, 9/23)    | Numerical Linear Algebra: [LU decomposition](.) [[notebook](.)], [Cholesky](.) [[notebook](.)], [QR decomposition](.) [[notebook](.)] | [Homework 2](.) [[notebook](.)] | 2020-10-16  |
+| 5 (9/28, 9/30)    | [Linear regression](.) [[notebook](.)], Iterative methods: [Basics](.) [[notebook](.)] | |  |  |
+| 6 (10/5, 10/7)          | [Conjugate Gradient](.) [[notebook](.)] |  |  |
+| 7 (10/12, 10/14)  | [Eigenvalue and singular value decompositions](.) [[notebook](.)]  | [Final Project Proposal](.)  | 2020-10-26  |
+| 8 (10/19, 10/21)  | [Introduction to mathematical optimization](.), [Optimization in Julia](.) [[notebook]](.) | | |
+| 9 (10/25, 10/28)  | [Linear programming](.) [[notebook]](.), [Quadratic programming](.) [[notebook]](.)  | [Homework 3](.) [[notebook](.)] | 2020-11-17 |
+| 10 (11/2, 11/4)   | [Second-order cone programming](.) [[notebook]](.), [Semidefinite programming](.) [[notebook]](.) |  |  |
+| 11 (11/9, 11/11) | [Geometric programming](.) [[notebook]](.), [KKT conditions](.) | | |
+| 12 (11/16, 11/18) | [Newton's method, nonlinear regression](.) [[notebook]](.)  | |  |
+| 13 (11/23, 11/25) | [First-order methods](.) | [Homework 4](.) [[notebook](.)] | 2020-12-14 |
+| 14 (11/30, 12/2)   | [MM algorithms](.) |  |  |
+| 15 (12/7, 12/9)  | Final Projects      |  |  |
+| 16 (12/14)  | Final Projects      |  |  |
 
 
