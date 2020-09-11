@@ -4,6 +4,7 @@ This is the course website for M1399.000200: "Advanced Statistical Computing " a
 
 ## Announcements
 
+* 2020-09-11: Homework 1 has been posted. Due date is 2020-09-27.
 * 2020-09-02: course will be given online. Mostly real-time, but sometimes pre-recorded.
 
 ## Instructor 
@@ -12,7 +13,7 @@ Joong-Ho (Johann) Won
 
 **Email**: wonj AT stats DOT snu DOT ac DOT kr
 
-**Class Time**: Mondays/Wednesdays 9:40 - 10:55 @ online
+**Class Time**: Mondays/Wednesdays 11:00 - 12:15 @ online
 
 **Office Hours**: By appointment.
 
@@ -54,9 +55,9 @@ The following schedule is tentative, and is subject to change over the course.
 
 | Week | Topic | Assignment | Due Date |
 |---| --- | --- | --- | 
-| 1 (9/2)      | [Introduction](./lectures/01-intro/intro.html), [Julia Intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaintro.ipynb) [[notebook](./lectures/02-juliaintro/juliaintro.ipynb)], [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | | | 
-| 2 (9/7, 9/9)     | [Computer Arithmetic](./lectures/03-arith/arith.ipynb) [[notebook](./lectures/03-arith/arith.ipynb)] | [Homework 1](.) [[notebook](.)] | 2020-09-22 |
-| 3 (9/14, 9/16)    | [Algorithm](.) [[notebook](.)], Numerical Linear Algebra: [BLAS](.) [[notebook](.)], [Triangular systems](.) [[notebook](.)]|  |  |
+| 1 (9/2)      | [Introduction](./lectures/01-intro/intro.html), [Julia Intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaintro.ipynb) [[notebook](./lectures/02-juliaintro/juliaintro.ipynb)] | | | 
+| 2 (9/7, 9/9)     | [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | [Homework 1](./hw/hw1/hw01.html) [[notebook](./hw/hw1/hw01.ipynb)] | 2020-09-27 |
+| 3 (9/14, 9/16)    | [Computer Arithmetic](./lectures/03-arith/arith.ipynb) [[notebook](./lectures/03-arith/arith.ipynb)] [Algorithm](.) [[notebook](.)], Numerical Linear Algebra: [BLAS](.) [[notebook](.)], [Triangular systems](.) [[notebook](.)]|  |  |
 | 4 (9/21, 9/23)    | Numerical Linear Algebra: [LU decomposition](.) [[notebook](.)], [Cholesky](.) [[notebook](.)], [QR decomposition](.) [[notebook](.)] | [Homework 2](.) [[notebook](.)] | 2020-10-16  |
 | 5 (9/28, 9/30)    | [Linear regression](.) [[notebook](.)], Iterative methods: [Basics](.) [[notebook](.)] | |  |  |
 | 6 (10/5, 10/7)          | [Conjugate Gradient](.) [[notebook](.)] |  |  |
