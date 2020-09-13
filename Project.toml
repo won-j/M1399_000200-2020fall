@@ -2,6 +2,7 @@
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+GraphRecipes = "bd48cda9-67a9-57be-86fa-5b3c104eda73"
 Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 ORCA = "47be7bcc-f1a6-5447-8b36-7eeeff7534fd"
 PlotlyBase = "a03496cd-edff-5a9b-9e67-9cda94a718b5"
