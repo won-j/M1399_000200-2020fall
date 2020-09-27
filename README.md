@@ -4,6 +4,7 @@ This is the course website for M1399.000200: "Advanced Statistical Computing " a
 
 ## Announcements
 
+* 2020-09-27: Homework 2 has been posted. Due date is 2020-10-18.
 * 2020-09-27: A make-up lecture for 2020-09-30 class will be recorded and posted on eTL.
 * 2020-09-27: Lecture note 3 has been updated.
 * 2020-09-16: Fixed typos in Homework 1.
@@ -60,10 +61,9 @@ The following schedule is tentative, and is subject to change over the course.
 |---| --- | --- | --- | 
 | 1 (9/2)      | [Introduction](./lectures/01-intro/intro.html), [Julia Intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaintro.ipynb) [[notebook](./lectures/02-juliaintro/juliaintro.ipynb)] | | | 
 | 2 (9/7, 9/9)     | [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | [Homework 1](./hw/hw1/hw01.html) [[notebook](./hw/hw1/hw01.ipynb)] | 2020-09-27 |
-| 3 (9/14, 9/16)    | [Computer Arithmetic](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/03-arith/arith.ipynb) [[notebook](./lectures/03-arith/arith.ipynb)], [Algorithm](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/04-algo/algo.ipynb) [[notebook](./lectures/04-algo/algo.ipynb)], Numerical Linear Algebra: [intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/05-numalgintro/numalgintro.ipynb) [[notebook](./lectures/05-numalgintro/numalgintro.ipynb)], [triangular systems](.) [[notebook](.)]|  |  |
-| 4 (9/21, 9/23)    | Numerical Linear Algebra: [LU decomposition](.) [[notebook](.)], [Cholesky](.) [[notebook](.)], [QR decomposition](.) [[notebook](.)] | [Homework 2](.) [[notebook](.)] | 2020-10-16  |
-| 5 (9/28, 9/30)    | [Linear regression](.) [[notebook](.)], Iterative methods: [Basics](.) [[notebook](.)] | |  |  |
-| 6 (10/5, 10/7)          | [Conjugate Gradient](.) [[notebook](.)] |  |  |
+| 3 (9/14, 9/16)    | [Computer Arithmetic](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/03-arith/arith.ipynb) [[notebook](./lectures/03-arith/arith.ipynb)], [Algorithm](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/04-algo/algo.ipynb) [[notebook](./lectures/04-algo/algo.ipynb)] |  |  |
+| 4 (9/28, 9/30)    | Numerical Linear Algebra: [intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/05-numalgintro/numalgintro.ipynb) [[notebook](./lectures/05-numalgintro/numalgintro.ipynb)], 	[triangular systems](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/06-trisys/trisys.ipynb) [[notebook](./lectures/06-trisys/trisys.ipynb)],	[LU decomposition](.) [[notebook](.)], [Cholesky](.) [[notebook](.)], [QR decomposition](.) [[notebook](.)] | [Homework 2](./hw/hw2/hw02.html) [[notebook](./hw/hw1/hw02.ipynb)] | 2020-10-18  |
+| 5 (10/5, 10/7)    | [Linear regression](.) [[notebook](.)], Iterative methods: [Basics](.) [[notebook](.)] | |  |  |
 | 7 (10/12, 10/14)  | [Eigenvalue and singular value decompositions](.) [[notebook](.)]  | [Final Project Proposal](.)  | 2020-10-26  |
 | 8 (10/19, 10/21)  | [Introduction to mathematical optimization](.), [Optimization in Julia](.) [[notebook]](.) | | |
 | 9 (10/25, 10/28)  | [Linear programming](.) [[notebook]](.), [Quadratic programming](.) [[notebook]](.)  | [Homework 3](.) [[notebook](.)] | 2020-11-17 |
