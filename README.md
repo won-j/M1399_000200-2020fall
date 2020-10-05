@@ -63,16 +63,16 @@ The following schedule is tentative, and is subject to change over the course.
 | 2 (9/7, 9/9)     | [Plotting](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/02-juliaintro/juliaplots.ipynb) [[notebook](./lectures/02-juliaintro/juliaplots.ipynb)], [Jupyter](./lectures/02-juliaintro/jupyter.html) | [Homework 1](./hw/hw1/hw01.html) [[notebook](./hw/hw1/hw01.ipynb)] | 2020-09-27 |
 | 3 (9/14, 9/16)    | [Computer Arithmetic](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/03-arith/arith.ipynb) [[notebook](./lectures/03-arith/arith.ipynb)] |  |  |
 | 4 (9/21, 9/23)    | [Computer Arithmetic](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/03-arith/arith.ipynb) [[notebook](./lectures/03-arith/arith.ipynb)], [Algorithm](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/04-algo/algo.ipynb) [[notebook](./lectures/04-algo/algo.ipynb)] |  |  |
-| 5 (9/28, 9/30)    | Numerical Linear Algebra: [intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/05-numalgintro/numalgintro.ipynb) [[notebook](./lectures/05-numalgintro/numalgintro.ipynb)], 	[triangular systems](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/06-trisys/trisys.ipynb) [[notebook](./lectures/06-trisys/trisys.ipynb)], [LU decomposition](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/07-gelu/gelu.ipynb) [[notebook](./lectures/07-gelu/gelu.ipynb)] [[example](./lectures/07-gelu/gelu.pdf)],, [Cholesky](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/08-chol/chol.ipynb) [[notebook](./lectures/08-chol/chol.ipynb)] | [Homework 2](./hw/hw2/hw02.html) [[notebook](./hw/hw2/hw02.ipynb)] | 2020-10-18  |
-| 6 (10/5, 10/7)    | [QR decomposition](.) [[notebook](.)], [Linear regression](.) [[notebook](.)], [Iterative methods](.) [[notebook](.)] | |  |  |
-| 7 (10/12, 10/14)  | [Eigenvalue and singular value decompositions](.) [[notebook](.)]  | [Final Project Proposal](.)  | 2020-10-26  |
-| 8 (10/19, 10/21)  | [Introduction to mathematical optimization](.), [Optimization in Julia](.) [[notebook]](.) | | |
-| 9 (10/25, 10/28)  | [Linear programming](.) [[notebook]](.), [Quadratic programming](.) [[notebook]](.)  | [Homework 3](.) [[notebook](.)] | 2020-11-17 |
-| 10 (11/2, 11/4)   | [Second-order cone programming](.) [[notebook]](.), [Semidefinite programming](.) [[notebook]](.) |  |  |
-| 11 (11/9, 11/11) | [Geometric programming](.) [[notebook]](.), [KKT conditions](.) | | |
-| 12 (11/16, 11/18) | [Newton's method, nonlinear regression](.) [[notebook]](.)  | |  |
-| 13 (11/23, 11/25) | [First-order methods](.) | [Homework 4](.) [[notebook](.)] | 2020-12-14 |
-| 14 (11/30, 12/2)   | [MM algorithms](.) |  |  |
+| 5 (9/28, 9/30)    | Numerical Linear Algebra: [intro](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/05-numalgintro/numalgintro.ipynb) [[notebook](./lectures/05-numalgintro/numalgintro.ipynb)], 	[triangular systems](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/06-trisys/trisys.ipynb) [[notebook](./lectures/06-trisys/trisys.ipynb)] | [Homework 2](./hw/hw2/hw02.html) [[notebook](./hw/hw2/hw02.ipynb)] | 2020-10-18  |
+| 6 (10/5, 10/7)    | [LU decomposition](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/07-gelu/gelu.ipynb) [[notebook](./lectures/07-gelu/gelu.ipynb)] [[example](./lectures/07-gelu/gelu.pdf)], [Cholesky](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/08-chol/chol.ipynb) [[notebook](./lectures/08-chol/chol.ipynb)] | |  |  |
+| 7 (10/12, 10/14)  | [QR decomposition](.) [[notebook](.)], [Linear regression](.) [[notebook](.)], [Iterative methods](.) [[notebook](.)] | [Final Project Proposal](.)  | 2020-10-26  |
+| 8 (10/19, 10/21)  | [Eigenvalue and singular value decompositions](.) [[notebook](.)] | | |
+| 9 (10/25, 10/28)  | [Introduction to mathematical optimization](.), [Optimization in Julia](.) [[notebook]](.) | [Homework 3](.) [[notebook](.)] | 2020-11-17 |
+| 10 (11/2, 11/4)   | [Linear programming](.) [[notebook]](.), [Quadratic programming](.) [[notebook]](.) |  |  |
+| 11 (11/9, 11/11) | [Second-order cone programming](.) [[notebook]](.), [Semidefinite programming](.) [[notebook]](.) | | |
+| 12 (11/16, 11/18) | [Geometric programming](.) [[notebook]](.), [KKT conditions](.) | |  |
+| 13 (11/23, 11/25) | [Newton's method, nonlinear regression](.) [[notebook]](.) | [Homework 4](.) [[notebook](.)] | 2020-12-14 |
+| 14 (11/30, 12/2)   | [First-order methods](.), [MM algorithms](.) |  |  |
 | 15 (12/7, 12/9)  | Final Projects      |  |  |
 | 16 (12/14)  | Final Projects      |  |  |
 
