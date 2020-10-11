@@ -29,7 +29,7 @@ In the design of experiments, optimal designs are a class of experimental design
 
 ## Fused lasso and total variation penalty
 
-Total variation (TV) penalty has been popular in image processing since the work of Rudin, L. I., Osher, S. and Fatemi, E. (1992), "Nonlinear total variation based noise removal algorithms," Physica D: 60(1), 259–268. This penalty has become popularized in statistical in the name of the "fused lasso," due to Tibshirani, R. , Saunders, M., Rosset, S., Zhu, J., and Knight, K. (2005), "Sparsity and Smoothness Via the Fused Lasso," Journal of the Royal Statistical Society, Series B, 67, 91–108; and Tibshirani, R. J., and Taylor, J. (2011), "The Solution Path of the Generalized Lasso," The Annals of Statistics, 39, 1335–1371. TV penalty is becoming increasingly popular in other estimation problems than regression:
+Total variation (TV) penalty has been popular in image processing since the work of Rudin, L. I., Osher, S. and Fatemi, E. (1992), "Nonlinear total variation based noise removal algorithms," Physica D: 60(1), 259–268. This penalty has become popularized in statistics under the name "fused lasso," due to Tibshirani, R. , Saunders, M., Rosset, S., Zhu, J., and Knight, K. (2005), "Sparsity and Smoothness Via the Fused Lasso," Journal of the Royal Statistical Society, Series B, 67, 91–108; and Tibshirani, R. J., and Taylor, J. (2011), "The Solution Path of the Generalized Lasso," Annals of Statistics, 39, 1335–1371. TV penalty is becoming increasingly popular in other estimation problems than regression:
 
 * Bassett, Robert, and James Sharpnack. "Fused density estimation: theory and methods." Journal of the Royal Statistical Society -- Series B (2019): 839-860.
 
