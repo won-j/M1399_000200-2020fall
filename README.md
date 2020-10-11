@@ -4,6 +4,7 @@ This is the course website for M1399.000200: "Advanced Statistical Computing " a
 
 ## Announcements
 
+* 2020-10-12: Homework 2 typos has been fixed. See especially Q5.
 * 2020-09-27: Homework 2 has been posted. Due date is 2020-10-18.
 * 2020-09-27: A make-up lecture for 2020-09-30 class will be recorded and posted on eTL.
 * 2020-09-27: Lecture note 3 has been updated.
