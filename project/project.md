@@ -9,7 +9,7 @@ Three (3) students should team up to accomplish the goal. Each team is required 
 
 ## Stochastic optimization
 
-In large-scale optimization, often the objective function or its derivatives can only be estimated. In this case, *stochastic* methods comes to rescue. Recent developments include:
+In large-scale optimization, often the objective function or its derivatives can only be estimated. In this case, *stochastic* methods come to rescue. Recent developments include:
 
 * Liang, Tengyuan, and Weijie J. Su. "Statistical inference for the population landscape via moment-adjusted stochastic gradients." Journal of the Royal Statistical Society -- Series B (2019): 431-456.
 
