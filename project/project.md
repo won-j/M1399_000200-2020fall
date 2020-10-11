@@ -9,7 +9,7 @@ Three (3) students should team up to accomplish the goal. Each team is required 
 
 ## Stochastic optimization
 
-In large-scale optimization, often the objective function or its derivatives can only be estimated. In this case, *stochastic* methods comes at a rescue. Recent developments include:
+In large-scale optimization, often the objective function or its derivatives can only be estimated. In this case, *stochastic* methods comes to rescue. Recent developments include:
 
 * Liang, Tengyuan, and Weijie J. Su. "Statistical inference for the population landscape via moment-adjusted stochastic gradients." Journal of the Royal Statistical Society -- Series B (2019): 431-456.
 
@@ -20,16 +20,16 @@ In large-scale optimization, often the objective function or its derivatives can
 
 In the design of experiments, optimal designs are a class of experimental designs that are optimal with respect to some statistical criterion. Recent algorithmic developments include:
 
-* Dennis Schmidt. "Characterization of $c$-, $L$-, and $\phi_k$-optimal designs for a class of non-linear multiple-regression models." Journal of the Royal Statistical Society -- Series B (2019): 101-120 
+<!-- * Dennis Schmidt. "Characterization of $c$-, $L$-, and $\phi_k$-optimal designs for a class of non-linear multiple-regression models." Journal of the Royal Statistical Society -- Series B (2019): 101-120 -->
 
 * Harman, Radoslav, Lenka Filová, and Peter Richtárik. "A randomized exchange algorithm for computing optimal approximate designs of experiments." Journal of the American Statistical Association (2019): 1-30.
 
-<!-- * Yang, Min, Stefanie Biedermann, and Elina Tang. "On optimal designs for nonlinear models: a general and efficient algorithm." Journal of the American Statistical Association 108.504 (2013): 1411-1420. -->
+* Yang, Min, Stefanie Biedermann, and Elina Tang. "On optimal designs for nonlinear models: a general and efficient algorithm." Journal of the American Statistical Association 108.504 (2013): 1411-1420. 
 
 
 ## Fused lasso and total variation penalty
 
-Total variation (TV) penalty has been popular in image processing since the work of Rudin, L. I., Osher, S. and Fatemi, E. (1992), ‘Nonlinear total variation based noise removalalgorithms’,Physica D60(1), 259–268. This penalty has become popularized in statistical in the name of the "fused lasso," due to Tibshirani, R. , Saunders, M., Rosset, S., Zhu, J., and Knight, K. (2005), “Sparsity and Smoothness Via the Fused Lasso,” Journal of the Royal Statistical Society, Series B, 67, 91–108; and Tibshirani, R. J., and Taylor, J. (2011), “The Solution Path of the Generalized Lasso,” The Annals of Statistics, 39, 1335–1371. TV penalty is becoming increasingly popular in other estimation problems than regression:
+Total variation (TV) penalty has been popular in image processing since the work of Rudin, L. I., Osher, S. and Fatemi, E. (1992), "Nonlinear total variation based noise removal algorithms," Physica D: 60(1), 259–268. This penalty has become popularized in statistical in the name of the "fused lasso," due to Tibshirani, R. , Saunders, M., Rosset, S., Zhu, J., and Knight, K. (2005), "Sparsity and Smoothness Via the Fused Lasso," Journal of the Royal Statistical Society, Series B, 67, 91–108; and Tibshirani, R. J., and Taylor, J. (2011), "The Solution Path of the Generalized Lasso," The Annals of Statistics, 39, 1335–1371. TV penalty is becoming increasingly popular in other estimation problems than regression:
 
 * Bassett, Robert, and James Sharpnack. "Fused density estimation: theory and methods." Journal of the Royal Statistical Society -- Series B (2019): 839-860.
 
