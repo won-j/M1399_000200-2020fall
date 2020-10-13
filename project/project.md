@@ -13,12 +13,15 @@ In large-scale optimization, often the objective function or its derivatives can
 
 * Liang, Tengyuan, and Weijie J. Su. "Statistical inference for the population landscape via moment-adjusted stochastic gradients." Journal of the Royal Statistical Society -- Series B (2019): 431-456.
 
+* Ya-Ping Hsieh, Chen Liu, Volkan Cevher. "Finding Mixed Nash Equilibria of Generative Adversarial Networks." Proceedings of the 36th International Conference on Machine Learning, PMLR 97:2810-2819, 2019. URL: <http://proceedings.mlr.press/v97/hsieh19b.html>
+
 * Bo Dai, Niao He, Hanjun Dai, Le Song. "Provable Bayesian Inference via Particle Mirror Descent." Proceedings of the 19th International Conference on Artificial Intelligence and Statistics, PMLR 51:985-994, 2016. URL: <http://proceedings.mlr.press/v51/dai16.html>
+
 
 
 ## Optimal Design
 
-In the design of experiments, optimal designs are a class of experimental designs that are optimal with respect to some statistical criterion. Recent algorithmic developments include:
+In design of experiments, optimal designs are a class of experimental designs that are optimal with respect to some statistical criterion. Recent algorithmic developments include:
 
 <!-- * Dennis Schmidt. "Characterization of $c$-, $L$-, and $\phi_k$-optimal designs for a class of non-linear multiple-regression models." Journal of the Royal Statistical Society -- Series B (2019): 101-120 -->
 
@@ -31,7 +34,7 @@ In the design of experiments, optimal designs are a class of experimental design
 
 Total variation (TV) penalty has been popular in image processing since the work of Rudin, L. I., Osher, S. and Fatemi, E. (1992), "Nonlinear total variation based noise removal algorithms," Physica D: 60(1), 259–268. This penalty has become popularized in statistics under the name "fused lasso," due to Tibshirani, R. , Saunders, M., Rosset, S., Zhu, J., and Knight, K. (2005), "Sparsity and Smoothness Via the Fused Lasso," Journal of the Royal Statistical Society, Series B, 67, 91–108; and Tibshirani, R. J., and Taylor, J. (2011), "The Solution Path of the Generalized Lasso," Annals of Statistics, 39, 1335–1371. TV penalty is becoming increasingly popular in other estimation problems than regression:
 
-* Bassett, Robert, and James Sharpnack. "Fused density estimation: theory and methods." Journal of the Royal Statistical Society -- Series B (2019): 839-860.
+<!-- * Bassett, Robert, and James Sharpnack. "Fused density estimation: theory and methods." Journal of the Royal Statistical Society -- Series B (2019): 839-860. -->
 
 * Peter Radchenko, and Gourab Mukherjee. "Convex clustering via $\ell_1$ fusion penalization." Journal of the Royal Statistical Society -- Series B (2017): 1527-1546.
 
