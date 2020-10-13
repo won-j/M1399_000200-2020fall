@@ -13139,7 +13139,7 @@ Show that if Gaussian elimination with partial pivoting is applied to $A$, no ro
 <h2 id="Q3.-LU-Decomposition">Q3. LU Decomposition<a class="anchor-link" href="#Q3.-LU-Decomposition">&#182;</a></h2><p>Implement the LU decomposition in Julia.</p>
 <ol>
 <li><p>Write function <code>LUdecomp!</code> with interface</p>
-<div class="highlight"><pre><span></span><span class="n">LUdecomp!</span><span class="p">(</span><span class="n">A</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="n">T</span><span class="p">};</span> <span class="n">tol</span><span class="o">:</span><span class="n">T</span><span class="o">=</span><span class="n">convert</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mf">1e-8</span><span class="p">))</span> <span class="n">where</span> <span class="n">T</span> <span class="o">&lt;:</span> <span class="kt">AbstractFloat</span>
+<div class="highlight"><pre><span></span><span class="n">LUdecomp!</span><span class="p">(</span><span class="n">A</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="n">T</span><span class="p">};</span> <span class="n">tol</span><span class="o">::</span><span class="n">T</span><span class="o">=</span><span class="n">convert</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mf">1e-8</span><span class="p">))</span> <span class="n">where</span> <span class="n">T</span> <span class="o">&lt;:</span> <span class="kt">AbstractFloat</span>
 </pre></div>
 <p>\
 The decomposition <strong>must</strong> be done <em>in place</em>. That is, if $A=LU  \in \mathbb{R}^{n\times n}$, the $U$ should overwrite the upper triangular part of the input matrix <code>A</code>, and the strictly lower triangular part of <code>A</code> should be overwritten by the same part of the $L$ matrix computed. (Where does the diagonal part of $L$ go?)
@@ -13158,7 +13158,7 @@ again <em>in place</em>. That is, in addition to <code>A</code> overwritten by <
 <div class="highlight"><pre><span></span><span class="n">LUsolve</span><span class="p">(</span><span class="n">A</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="n">T</span><span class="p">},</span> <span class="n">b</span><span class="o">::</span><span class="kt">Vector</span><span class="p">{</span><span class="n">T</span><span class="p">})</span> <span class="n">where</span> <span class="n">T</span> <span class="o">&lt;:</span> <span class="kt">AbstractFloat</span>
 </pre></div>
 <p>\
-which does <strong>not</strong> alter neither <code>A</code> nor <code>b</code> but solves $Ax=b$ by calling <code>LUdecomp!</code>. 
+which does <strong>not</strong> alter neither <code>A</code> nor <code>b</code> but solves $Ax=b$ by calling <code>LUsolve!</code>. 
 Compare your results with the Julia expression <code>A \ b</code>.</p>
 </li>
 </ol>
@@ -13201,7 +13201,7 @@ that recovers $Q$. (<em>Hint</em>. For $\mathbf{P}_i=\mathbf{I}-2\mathbf{v}_k\ma
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Q5.-Big-regression">Q5. Big regression<a class="anchor-link" href="#Q5.-Big-regression">&#182;</a></h2><p>For a big data problem, you should choose the right method in order for the analysis even possible. 
-Visit <a href="http://stat-computing.org/dataexpo/2009/the-data.html">http://stat-computing.org/dataexpo/2009/the-data.html</a>. The website hosts data on 123 million flights over 22 years.</p>
+Visit <a href="https://doi.org/10.7910/DVN/HG7NV7">https://doi.org/10.7910/DVN/HG7NV7</a>. The website hosts data on 123 million flights over 22 years.</p>
 <ol>
 <li><p>The data for each year contains 29 variable. Assuming that all variables for double precision floating point numbers, estimate the size of the design matrix ($\mathbf{X}$) needed to analyze the entire 22 years of flights. Will it fit into your computer's memory?</p>
 </li>
