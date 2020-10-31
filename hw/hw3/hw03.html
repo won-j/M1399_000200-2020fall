@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13116,21 +13077,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="M1399.000200-Homework-3">M1399.000200 Homework 3<a class="anchor-link" href="#M1399.000200-Homework-3">&#182;</a></h1><h4 id="Due-Nov-17,-2019-@-11:59PM">Due Nov 17, 2019 @ 11:59PM<a class="anchor-link" href="#Due-Nov-17,-2019-@-11:59PM">&#182;</a></h4><p>Instruction: only submit <code>README.md</code>, this <code>.ipynb</code> file with your answers added (name change is not allowed), and <code>.jl</code> files in case you include them in this <code>.ipynb</code> file. Especially, do not put data files on Git. <em>No other files will not be graded.</em></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q1.-Conjugate-gradient">Q1. Conjugate gradient<a class="anchor-link" href="#Q1.-Conjugate-gradient">&#182;</a></h2><ol>
-<li><p>In the conjugate gradient (CG) algorithm derived in class, * The remaining tasks are show that 
- a. $t_{i+1} = -\frac{\mathbf{r}_{i-1}^T\mathbf{v}_i}{\mathbf{v}_{i+1}^T\mathbf{A}\mathbf{v}_{i+1}} \neq 0$, and
- b. $\alpha_{i+1} \neq 0$
-unless the iteration is terminated early.</p>
+<h1 id="M1399.000200-Homework-3">M1399.000200 Homework 3<a class="anchor-link" href="#M1399.000200-Homework-3">&#182;</a></h1><h4 id="Due-Nov-17,-2020-@-11:59PM">Due Nov 17, 2020 @ 11:59PM<a class="anchor-link" href="#Due-Nov-17,-2020-@-11:59PM">&#182;</a></h4><h3 id="Instruction">Instruction<a class="anchor-link" href="#Instruction">&#182;</a></h3><ol>
+<li><p>Only submit a <code>README.md</code> file that identify you, this notebook file (<code>hw3.ipynb</code>) with your answers, and the html export of the notebook (<code>hw3.html</code>), along with all code (<code>*.jl</code>) that are necessary to reproduce the results. If you write a Julia function, then it must be in a separate file, not in the notebook. <em>No other files will not be graded.</em></p>
 </li>
-<li><p>Show that the "economical version" of the CG algorithm is equivalent to the original version.</p>
+<li><p>Before the due date, commit your <strong>master</strong> branch. The teaching assistant and the instructor will check out your committed master branch for grading. Commit time will be used as your submission time. That    means if you commit your Homework 1 submission after the deadline, penalty    points will be deducted for late submission according to the syllabus.</p>
+</li>
+<li><p>To save the storage, do <strong>not</strong> put data files on Git.</p>
+</li>
+<li><p><strong>Start early</strong>. The time to be spent on coding is always underestimated.</p>
 </li>
 </ol>
 
@@ -13140,121 +13094,28 @@ unless the iteration is terminated early.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q2.-PageRank">Q2. PageRank<a class="anchor-link" href="#Q2.-PageRank">&#182;</a></h2><p><a href="https://en.wikipedia.org/wiki/Perron–Frobenius_theorem">Perron-Frobenius theory</a> states that if a matrix $\mathbf{A}$ has positive entries, then there exists a positive dominant eigenvalue-eigenvector pair, i.e., $\mathbf{A}\mathbf{v}_0 = \lambda_0\mathbf{v}_0$ for some $\lambda_0 &gt; 0$ and $\mathbf{v}_0 &gt; 0$, and if $\lambda\neq\lambda_0$ is an eigenvalue of $\mathbf{A}$, then $|\lambda| &lt; \lambda_0$. Also, the geometric and algebraic multiplicity of $\lambda_0$ is 1. That is, $\text{dim}(\text{span}\{\mathbf{v}: \mathbf{A}\mathbf{v}=\lambda_0\mathbf{v}\})=1$, and $\lambda_0$ is the unique root of $\text{det}(\mathbf{A}-\lambda\mathbf{I})=0$.</p>
-<p>In class, we defined the PageRank problem as an eigenvalue problem associated with the transition matrix $\mathbf{P}$ of a Markov chain. We assume the random jump probability $p &gt; 0$ (the inequality is elementwise).</p>
+<h2 id="Q1.-MNIST">Q1. MNIST<a class="anchor-link" href="#Q1.-MNIST">&#182;</a></h2><p>This problem is about automatic recognition of handwritten digits. The dataset to be used is the famous MNIST  dataset available at</p>
+<p><a href="https://www.kaggle.com/oddrationale/mnist-in-csv">https://www.kaggle.com/oddrationale/mnist-in-csv</a></p>
+<p>The dataset <code>mnist_train.csv</code> contains $n = 60, 000$ images for training. An image is a 28 * 28 gray-level array. Each image is stored as a line of the file mnist test.csv, in the format</p>
+
+<pre><code>label, pix(1, 1), pix(1, 2), pix(1, 3), ..., pix(28, 28)</code></pre>
+<p>where <code>label</code> is a label corresponding to the digit represented by the image (0, 1, ..., 9), and <code>pix(r, c)</code> is the pixel intensity at row <code>r</code>, column <code>c</code> (an integer between 0 and 255 (inclusive)).</p>
+<p>The $i$-th image in a dataset is considered a vector $\mathbf{x}_i \in \mathbb{R}^p$, $p = 28\times 28 = 784$.</p>
 <ol>
-<li><p>Express $\mathbf{P}$ as a sum of a sparse matrix and a rank-1 matrix.</p>
+<li><p>A widely used approach towards digit recognition is principal component analysis. Compute the sample covariance matrix
+$$
+ \hat{\Sigma} = \frac{1}{n}\sum_{i=1}^n\mathbf{x}_i\mathbf{x}_i^T.
+$$
+ \
+after standardization.
+Let $V \in \mathbb{R}^{d\times r}$ be the matrix whose columns are given by the eigenvectors of $\Sigma$  associated with the $r = 10$ largest eigenvalues.</p>
+<p>Plot the $r$ principal components as 28 * 28 pixels images. Scale them as to make them visible.</p>
 </li>
-<li><p>Show that the equation $(\mathbf{I}-\mathbf{P}^T)\mathbf{x}=\mathbf{0}$ has a unique solution up to scaling. Also show that the solution $\mathbf{x} &gt; 0$.</p>
-</li>
-<li><p>Obtain the connectivity matrix $\mathbf{A}$ from the SNAP/web-Google data in the <code>MatrixDepot</code> package.</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">MatrixDepot</span>
-<span class="n">md</span> <span class="o">=</span> <span class="n">mdopen</span><span class="p">(</span><span class="s">&quot;SNAP/web-Google&quot;</span><span class="p">)</span>
-<span class="n">md</span><span class="o">.</span><span class="n">A</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>include group.jl for user defined matrix generators
-verify download of index files...
-used remote site is https://sparse.tamu.edu/?per_page=All
-populating internal database...
-downloading: https://sparse.tamu.edu/MM/SNAP/web-Google.tar.gz
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>
-x web-Google/web-Google.mtx
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>916428×916428 SparseArrays.SparseMatrixCSC{Bool,Int64} with 5105039 stored entries:
-  [11343 ,      1]  =  true
-  [11928 ,      1]  =  true
-  [15902 ,      1]  =  true
-  [29547 ,      1]  =  true
-  [30282 ,      1]  =  true
-  [31301 ,      1]  =  true
-  [38717 ,      1]  =  true
-  [43930 ,      1]  =  true
-  [46275 ,      1]  =  true
-  [48193 ,      1]  =  true
-  [50823 ,      1]  =  true
-  [56911 ,      1]  =  true
-  ⋮
-  [618730, 916427]  =  true
-  [622998, 916427]  =  true
-  [673046, 916427]  =  true
-  [716616, 916427]  =  true
-  [720325, 916427]  =  true
-  [772226, 916427]  =  true
-  [785097, 916427]  =  true
-  [788476, 916427]  =  true
-  [822938, 916427]  =  true
-  [833616, 916427]  =  true
-  [417498, 916428]  =  true
-  [843845, 916428]  =  true</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li>Compute summary statistics:<ul>
-<li>number of pages</li>
-<li>number of edges</li>
-<li>number of dangling nodes (pages with no out links)</li>
-<li>histogram of in-degrees</li>
-<li>which page has the maximum in-degree?</li>
-<li>histogram of out-degrees</li>
-<li>which page has the maximum out-degree?</li>
-<li>visualize the sparsity pattern of $\mathbf{A}$ using <code>UnicodePlots.jl</code>.    </li>
-</ul>
+<li><p>Consider the case $r = 10$ and pick a random image $\mathbf{x}_i$ for each digit 0,1,...,9 from  <code>mnist_test.csv</code> that contains $n=10,000$ images for testing. Plot 
+$$
+ \mathbf{y}_i = \mathbf{V}^T\mathbf{x}_i,
+$$
+the loadings of each image $\mathbf{x}_i$ in terms of the principal components $\mathbf{v}_1,\dotsc,\mathbf{v}_r$. Discuss the possibility of the use of the loadings for digit recognition.</p>
 </li>
 </ol>
 
@@ -13264,23 +13125,7 @@ x web-Google/web-Google.mtx
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p>Set $p=0.8$ and solve the PageRank problem with the above $\mathbf{A}$ using</p>
-<ul>
-<li>An iterative linear system solver such as GMRES.</li>
-<li>An iterative EVD solver such as Arnoldi method.</li>
-</ul>
-<p>For iterative methods, use the <code>IterativeSolvers.jl</code> and <code>Arpack.jl</code> packages. Make sure to utilize the special structure of $\mathbf{P}$ to speed up the matrix-vector multiplication. (Hint: <code>LinearMaps.jl</code>)</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q3.-Convex-analysis">Q3. Convex analysis<a class="anchor-link" href="#Q3.-Convex-analysis">&#182;</a></h2><p>Prove the following:</p>
+<h2 id="Q2.-Convex-analysis">Q2. Convex analysis<a class="anchor-link" href="#Q2.-Convex-analysis">&#182;</a></h2><p>Prove the following:</p>
 <ol>
 <li><p>(Nonnegative weighted sums) If $f$ and $g$ are convex and $\alpha$ and $\beta$ are nonnegative constants, then $\alpha f + \beta g$ is convex, with $\text{dom}f \cap \text{dom}g$.</p>
 </li>
@@ -13290,7 +13135,7 @@ x web-Google/web-Google.mtx
 </li>
 <li><p>(Composition) For $h:\mathbb{R}\to\mathbb{R}\cup\{\infty\}$ and $g:V\to\mathbb{R}\cup\{\infty\}$, if $h$ is convex and <em>nondecreasing</em>, and $g$ is convex, then $f = h \circ g$ is convex, with $\text{dom}f = \{\mathbf{x}\in\text{dom}g: g(\mathbf{x})\in\text{dom}h\}$.</p>
 </li>
-<li><p>(Paritial minimization) If $f(\mathbf{x},\mathbf{y})$ is <strong>jointly</strong> convex in $(\mathbf{x},\mathbf{y})$, then $g(\mathbf{x}) = \inf_{\mathbf{y}\in C} f(\mathbf{x},\mathbf{y})$ is convex provided it is proper and $C$ is nonempty convex, with $\text{dom}f = \{\mathbf{x}: (\exists\mathbf{y}\in C)(\mathbf{x},\mathbf{y})\in\text{dom}f\}$ (projection).</p>
+<li><p>(Paritial minimization) If $f(\mathbf{x},\mathbf{y})$ is <strong>jointly</strong> convex in $(\mathbf{x},\mathbf{y})$, then $g(\mathbf{x}) = \inf_{\mathbf{y}\in C} f(\mathbf{x},\mathbf{y})$ is convex provided it is proper and $C$ is nonempty convex, with $\text{dom}g = \{\mathbf{x}: (\exists\mathbf{y}\in C)(\mathbf{x},\mathbf{y})\in\text{dom}f\}$ (projection).</p>
 </li>
 <li><p>(Perspective) If $f(\mathbf{x})$ is convex and <em>finite</em>, then its <em>perspective</em> $g(\mathbf{x}, t)=t f(t^{-1}\mathbf{x})$ is convex, with $\text{dom}g=\{(\mathbf{x},t): t^{-1}\mathbf{x}\in\text{dom}f,~ t&gt;0\}$.</p>
 </li>
@@ -13302,7 +13147,7 @@ x web-Google/web-Google.mtx
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q4.-LP">Q4. LP<a class="anchor-link" href="#Q4.-LP">&#182;</a></h2><p>We want to solve an LP
+<h2 id="Q3.-LP">Q3. LP<a class="anchor-link" href="#Q3.-LP">&#182;</a></h2><p>We want to solve an LP
 $$
     \begin{array}{ll}
     \text{minimize} &amp; \mathbf{c}^T\mathbf{x} \\
@@ -13335,7 +13180,7 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q5.-Lasso-and-Danzig">Q5. Lasso and Danzig<a class="anchor-link" href="#Q5.-Lasso-and-Danzig">&#182;</a></h2><ol>
+<h2 id="Q4.-Lasso-and-Danzig">Q4. Lasso and Danzig<a class="anchor-link" href="#Q4.-Lasso-and-Danzig">&#182;</a></h2><ol>
 <li><p>Formulate the Danzig selector problem as an LP.</p>
 </li>
 <li><p>Characterize $t_{\max}$, for which if $t \ge t_{\max}$, the solution to the Danzig selector problem does not vary.</p>
@@ -13356,7 +13201,7 @@ Then split data into the training and test sets by 8 to 2. Fit the Dantig select
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q6.-QP">Q6. QP<a class="anchor-link" href="#Q6.-QP">&#182;</a></h2><p>An alternative formulation of the support vector machine (SVM) is 
+<h2 id="Q5.-QP">Q5. QP<a class="anchor-link" href="#Q5.-QP">&#182;</a></h2><p>An alternative formulation of the support vector machine (SVM) is 
 $$
     \begin{array}{ll}\tag{P}
     \text{minimize} &amp; \frac{1}{2}\|\boldsymbol\beta\|_2^2 + t\sum_{i=1}^n\xi_i \\
@@ -13398,27 +13243,7 @@ The response variable is the presence or absence of coronary heart disease (CHD)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q7.-SOCP">Q7. SOCP<a class="anchor-link" href="#Q7.-SOCP">&#182;</a></h2><p>Show that the following operations perserve second-order-cone representability of sets.</p>
-<ol>
-<li><p>Intersection.</p>
-</li>
-<li><p>Cartesian product.</p>
-</li>
-<li><p>Minkowski sum.</p>
-</li>
-<li><p>Image $\mathcal{A}C$ of a SOCr set $C$ under an linear (affine) map $\mathcal{A}$.</p>
-</li>
-<li><p>Inverse image $\mathcal{A}^{-1}C$ of a SOCr set $C$ under a linear (affine) map $\mathcal{A}$.</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q8.-Total-variation-denoising">Q8. Total variation denoising<a class="anchor-link" href="#Q8.-Total-variation-denoising">&#182;</a></h2><p>A corrupted image is given:</p>
+<h2 id="Q6.-Total-variation-denoising">Q6. Total variation denoising<a class="anchor-link" href="#Q6.-Total-variation-denoising">&#182;</a></h2><p>A corrupted image is given:</p>
 <p><img src='./barbara128noisy.png' width=256></p>
 <p>Let $\mathbf{Y}\in\mathbb{R}^{128\times 128}$ represent the image. The <em>isotropic total variation (TV) denoising</em> minimizes
 $$
@@ -13448,7 +13273,7 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q9.-SDP">Q9. SDP<a class="anchor-link" href="#Q9.-SDP">&#182;</a></h2><ol>
+<h2 id="Q7.-SDP">Q7. SDP<a class="anchor-link" href="#Q7.-SDP">&#182;</a></h2><ol>
 <li><p>For $\mathbf{X}\in\mathbb{R}^{m\times n}$ and $t\in\mathbb{R}_+$, show that $\|\mathbf{X}\|_* \le t$ if and only if there exist $\mathbf{Y}\in\mathbb{R}^{m\times m}$ and $\mathbf{Z}\in\mathbb{R}^{n\times n}$ such that
 $$
  \begin{bmatrix} \mathbf{Y} &amp; \mathbf{X} \\ \mathbf{X}^T &amp; \mathbf{Z} \end{bmatrix} \succeq \mathbf{0},
@@ -13473,137 +13298,6 @@ if $\begin{bmatrix} \mathbf{Y} &amp; \mathbf{X} \\ \mathbf{X}^T &amp; \mathbf{Z}
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Q10.-ROC-analysis-and-GP">Q10. ROC analysis and GP<a class="anchor-link" href="#Q10.-ROC-analysis-and-GP">&#182;</a></h2><p>Suppose a diagnostic test uses a random variable $X$ to diagnose a certain disease; if the value of $X$ is larger than a critical value $c$, the subject of the diagnosis is classfied into the disease (positive) class; otherwise into the non-disease (negative) class. Each critical value corresponds to a classifier. Then, we can define the class-conditional survival functions for the classifier
-$$
-    S_{+}(c) = P_{+}(X &gt; c), \quad S_{-}(c) = P_{-}(X &gt; c)
-$$
-where $P_{+}$ (resp. $P_{-}$) is the condition distribution of $X$ given that the measurement is from the positive (resp. negative) class.</p>
-<p>Then the true positive rate (TPR) and false positive rate (FPR) of the classifier are defined as
-$$
-    TPR(c) = S_{+}(c), \quad FPR(c) = S_{-}(c).
-$$
-Finally, the reciever operating characteristic (ROC) curve is the parametric curve $\{(FPR(c), TPR(c)): c \in \mathbb{R}\}$.</p>
-<p>The objective of this problem is in the estimation of the ROC curve. The dataset is observed realizations of $\mathbf{X}$ for each class: $\mathcal{D}=\cup_{i=+,-}\{x_{i1}, \dotsc, x_{in_i}\}$.</p>
-<p>The empirical ROC curve is the plot of empirical FPR vs. TPR, i.e., $\{(\hat{S}_{-}(c), \hat{S}_{+}(c)): c \in \mathbb{R}\}$,
-where $\hat{S}_{+}$ and $\hat{S}_{-}$ are the empirical class-conditional survival functions. Assuming that the observations are independent, it can be shown that $(\hat{S}_{+}, \hat{S}_{-})$ maximizes the nonparametric likelihood of the data
-$$
-    \mathcal{L}(S_{+}, S_{-}) = \prod_{i=+, -}\prod_{j=1}^{m+1}[S_i(x_{j-1}) - S_i(x_j)]^{d_{ij}},
-$$
-where $x_1 &lt; x_2 &lt; \dotsb &lt; x_m$ are ordered unique data points in $\mathcal{D}$, and $d_{ij}$ is the number of observations of class $i$ at $x_j$; we interpret $x_0 = -\infty$ and $x_{m+1}=\infty$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li><p>Show that the maximum nonparametric likelihood (NPMLE) problem above can be cast as a GP. (Hint. let $p_{ij} = S_i(x_j)/S_i(x_{j-1})$ and introduce auxiliary variables $q_{ij} = 1 - p_{ij} \ge 0$. How would you handle the <em>equality constraints</em> $p_{ij} + q_{ij} = 1$ involving posynomials?)</p>
-</li>
-<li><p>Suppose now we want to add a <em>shape constraint</em> to the estimated ROC curve. Specifically, we want the curve to be <strong>concave</strong>. Show that this constraint can be satisfied by adding inequality constraints to the likelihood function above:
-$$
- \frac{S_{+}(x_j)-S_{+}(x_{j-1})}{S_{-}(x_j)-S_{-}(x_{j-1})} 
- \le
- \frac{S_{+}(x_{j+1})-S_{+}(x_{j})}{S_{-}(x_{j+1})-S_{-}(x_{j})},
- \quad
- j=1, \dotsc, m.
-$$</p>
-</li>
-<li><p>Show that the resulting concavity-constrained ROC curve estimation problem can be cast as a GP.</p>
-</li>
-<li><p>Find 1) the empirical ROC curve, and 2) concavity-constrained ROC curve for the data</p>
-</li>
-</ol>
-<table>
-<thead><tr>
-<th style="text-align:right">score</th>
-<th style="text-align:left">class</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">0.9</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.8</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.7</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:right">0.6</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.55</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.5</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.45</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:right">0.4</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.35</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.3</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:right">0.27</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.2</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:right">0.18</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:right">0.1</td>
-<td style="text-align:left">+</td>
-</tr>
-<tr>
-<td style="text-align:right">0.02</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<p>using GP, and plot them on the (FPR, TPR) plane.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
