@@ -13137,23 +13137,33 @@ $$
 \nabla^2 f(\mathbf{x})\Delta \mathbf{x} + \nabla f(\mathbf{x}) + \mathbf{A}^T\mathbf{w} &amp;= 0 \\
 \mathbf{A} \Delta \mathbf{x} &amp;= \mathbf{0}
 \end{split}
+$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>In matrix form,
 $$
-In matrix form,
-\begin{eqnarray*}
   \begin{bmatrix}
   \nabla^2 f(\mathbf{x}) &amp; \mathbf{A}^T \\
   \mathbf{A} &amp; \mathbf{0}
-  \end{bmatrix} \begin{bmatrix}
+  \end{bmatrix} 
+  \begin{bmatrix}
   \Delta \mathbf{x} \\
   \mathbf{w}
-  \end{bmatrix} = \begin{bmatrix}</p>
-<ul>
-<li>\nabla f(\mathbf{x}) \
-\mathbf{0}
-\end{bmatrix}
-\end{eqnarray*}
-We solve this linear equation to find the Newton direction. </li>
-</ul>
+  \end{bmatrix} = 
+  \begin{bmatrix}
+  -\nabla f(\mathbf{x}) \\
+  \mathbf{0}
+  \end{bmatrix}
+$$
+We solve this linear equation to find the Newton direction.</p>
 </li>
 <li><p>The matrix 
 $$
@@ -13299,71 +13309,96 @@ by the barrier method.</li>
 <li><p>Difference from barrier method: no double loop (recall there is a inner mimnimization step).</p>
 </li>
 <li><p>In the barrier method, it can be shown that a point $\mathbf{x}$ is equal to $\mathbf{x}^\star(t)$ if and only if<br>
-\begin{eqnarray*}
-  \nabla f<em>0(\mathbf{x}) + \sum</em>{i=1}^m \lambda_i \nabla f_i(\mathbf{x}) + \mathbf{A}^T \nu &amp;=&amp; \mathbf{0} \</p>
-<ul>
-<li>\lambda_i f_i(\mathbf{x}) &amp;=&amp; 1/t, \quad i = 1,\ldots,m \
-\mathbf{A} \mathbf{x} &amp;=&amp; \mathbf{b}.
-\end{eqnarray*}</li>
-</ul>
+$$
+\begin{split}
+  \nabla f_0(\mathbf{x}) + \sum_{i=1}^m \lambda_i \nabla f_i(\mathbf{x}) + \mathbf{A}^T \nu &amp;= \mathbf{0} \\
+  -\lambda_i f_i(\mathbf{x}) &amp;= 1/t, \quad i = 1,\ldots,m \\
+  \mathbf{A} \mathbf{x} &amp;= \mathbf{b}.
+\end{split}
+$$</p>
 </li>
-<li><p>We define the KKT residual<br>
-\begin{eqnarray*}
-  r_t(\mathbf{x}, \lambda, \nu) = \begin{pmatrix}
-  \nabla f_0(\mathbf{x}) + Df(\mathbf{x})^T \lambda + \mathbf{A}^T \nu \</p>
-<ul>
-<li>\text{diag}(\lambda) f(\mathbf{x}) - (1/t) \mathbf{1} \
-\mathbf{A} \mathbf{x} - \mathbf{b}
-\end{pmatrix} \triangleq \begin{pmatrix}
-r_{\text{dual}} \\
-r_{\text{cent}} \\
-r_{\text{pri}}
-\end{pmatrix},
-\end{eqnarray<em>}
-which we want to vanish,
-where
-\begin{eqnarray</em>}
-f(\mathbf{x}) = \begin{pmatrix}
-f_1(\mathbf{x}) \\
-\vdots \\
-f_m(\mathbf{x})
-\end{pmatrix}, \quad Df(\mathbf{x}) = \begin{pmatrix}
-\nabla f_1(\mathbf{x})^T \\
-\vdots \\
-\nabla f_m(\mathbf{x})^T
-\end{pmatrix}.
-\end{eqnarray*}</li>
 </ul>
-</li>
-<li><p>Denote the current point and Newton step as<br>
-\begin{eqnarray*}
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>We define the KKT residual  </li>
+</ul>
+$$
+r_t(\mathbf{x}, \lambda, \nu) = 
+\begin{bmatrix}
+    \nabla f_0(\mathbf{x}) + Df(\mathbf{x})^T \lambda + \mathbf{A}^T \nu \\
+    - \text{diag}(\lambda) f(\mathbf{x}) - (1/t) \mathbf{1} \\
+    \mathbf{A} \mathbf{x} - \mathbf{b}
+\end{bmatrix}
+=:
+\begin{bmatrix}
+    r_{\text{dual}} \\
+    r_{\text{cent}} \\
+    r_{\text{pri}}
+\end{bmatrix}
+$$<p>which we want to vanish, where</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+    f(\mathbf{x}) = \begin{bmatrix}
+    f_1(\mathbf{x}) \\
+    \vdots \\
+    f_m(\mathbf{x})
+    \end{bmatrix}, \quad Df(\mathbf{x}) = \begin{bmatrix}
+    \nabla f_1(\mathbf{x})^T \\
+    \vdots \\
+    \nabla f_m(\mathbf{x})^T
+    \end{bmatrix}.
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Denote the current point and Newton step as<br>
+$$
   \mathbf{y} = (\mathbf{x}, \lambda, \nu), \quad \Delta \mathbf{y} = (\Delta \mathbf{x}, \Delta \lambda, \Delta \nu).
-\end{eqnarray*}
+$$
 In view of the linear equation
-\begin{eqnarray*}
+$$
   r_t(\mathbf{y} + \Delta \mathbf{y}) \approx r_t(\mathbf{y}) + Dr_t(\mathbf{y}) \Delta \mathbf{y} = \mathbf{0},
-\end{eqnarray*}
-we solve $\Delta \mathbf{y} = - D r_t(\mathbf{y})^{-1} r_t(\mathbf{y})$, i.e.,
-\begin{eqnarray*}
-  \begin{pmatrix}
-  \nabla^2 f<em>0(\mathbf{x}) + \sum</em>{i=1}^m \lambda_i \nabla^2 f_i(\mathbf{x}) &amp; Df(\mathbf{x})^T &amp; \mathbf{A}^T \</p>
-<ul>
-<li>\text{diag}(\lambda) Df(\mathbf{x}) &amp; - \text{diag}(f(\mathbf{x})) &amp; \mathbf{0} \
-\mathbf{A} &amp; \mathbf{0} &amp; \mathbf{0} 
-\end{pmatrix} \begin{pmatrix}
-\Delta \mathbf{x} \\
-\Delta \lambda \\
-\Delta \nu
-\end{pmatrix} = - \begin{pmatrix}
-r_{\text{dual}} \\
-r_{\text{cent}} \\
-r_{\text{pri}}    
-\end{pmatrix}
-\end{eqnarray*}
-for the <strong>primal-dual search direction</strong>.</li>
+$$
+we solve $\Delta \mathbf{y} = - D r_t(\mathbf{y})^{-1} r_t(\mathbf{y})$, i.e.,</li>
 </ul>
-</li>
-</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+    \begin{bmatrix}
+    \nabla^2 f_0(\mathbf{x}) + \sum_{i=1}^m \lambda_i \nabla^2 f_i(\mathbf{x}) &amp; Df(\mathbf{x})^T &amp; \mathbf{A}^T \\
+    - \text{diag}(\lambda) Df(\mathbf{x}) &amp; - \text{diag}(f(\mathbf{x})) &amp; \mathbf{0} \\
+    \mathbf{A} &amp; \mathbf{0} &amp; \mathbf{0} 
+    \end{bmatrix} \begin{bmatrix}
+    \Delta \mathbf{x} \\
+    \Delta \lambda \\
+    \Delta \nu
+    \end{bmatrix} = - \begin{bmatrix}
+    r_{\text{dual}} \\
+    r_{\text{cent}} \\
+    r_{\text{pri}}    
+    \end{bmatrix}
+$$<p>for the <strong>primal-dual search direction</strong>.</p>
 
 </div>
 </div>
