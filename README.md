@@ -4,6 +4,7 @@ This is the course website for M1399.000200: "Advanced Statistical Computing " a
 
 ## Announcements
 
+* 2020-11-22: Homework 4 has been posted. Due data is 2020-12-14.
 * 2020-11-18: GP lecture notes have been updated to include the ECOS solver.
 * 2020-11-10: Homework 3 Q3-2 has been corrected.
 * 2020-10-31: Homework 3 has been posted. Due date is 2020-11-17.
