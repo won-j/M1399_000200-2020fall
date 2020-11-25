@@ -77,9 +77,9 @@ The following schedule is tentative, and is subject to change over the course.
 | 10 (11/2, 11/4)   | [Optimization in Julia](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/15-juliaopt/juliaopt.ipynb) [[notebook]](./lectures/15-juliaopt/juliaopt.ipynb) |  |  |
 | 11 (11/9, 11/11) | [Linear programming](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/16-lp/lp.ipynb) [[notebook]](./lectures/16-lp/lp.ipynb), [Quadratic programming](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/17-qp/qp.ipynb) [[notebook]](./lectures/17-qp/qp.ipynb), [Second-order cone programming](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/18-socp/socp.ipynb) [[notebook]](./lectures/18-socp/socp.ipynb) | | |
 | 12 (11/16, 11/18) | [Semidefinite programming](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/19-sdp/sdp.ipynb) [[notebook]](./lectures/19-sdp/sdp.ipynb), [Geometric programming](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/20-gp/gp.ipynb) [[notebook]](./lectures/20-gp/gp.ipynb) | |  |
-| 13 (11/23, 11/25) | [KKT conditions](./lectures/21-kkt/kkt.html), [Newton's method I](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/22-newton/newton.ipynb) [[notebook]](./lectures/22-newton/newton.ipynb), [Newton's method II](./lectures/22-newton/newton_constr.html) | [Homework 4](./hw/hw4/hw04.html) [[notebook](./hw/hw4/hw04.ipynb)] | 2020-12-14 |
-| 14 (11/30, 12/2)   | [First-order methods](./lectures/23-first/first.html), [MM algorithms](./lectures/24-mm/mm.html) |  |  |
-| 15 (12/7, 12/9)  | Final Projects      |  |  |
+| 13 (11/23, 11/25) | [KKT conditions](./lectures/21-kkt/kkt.html), [Newton's method I](https://mybinder.org/v2/gh/won-j/M1399_000200-2020fall/master?filepath=lectures/22-newton/newton.ipynb) [[notebook]](./lectures/22-newton/newton.ipynb) | [Homework 4](./hw/hw4/hw04.html) [[notebook](./hw/hw4/hw04.ipynb)] | 2020-12-14 |
+| 14 (11/30, 12/2)   | [Newton's method II](./lectures/22-newton/newton_constr.html), [MM algorithms](./lectures/24-mm/mm.html) |  |  |
+| 15 (12/7, 12/9)  | [First-order methods](./lectures/23-first/first.html), Final Projects      |  |  |
 | 16 (12/14)  | Final Projects      |  |  |
 
 
