@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13190,7 +13151,7 @@ $$
 The optimal value is 0.</p>
 <p>It can be shown that if we start from $x^{(0)}=(c, 1)$, then 
 $$
-  f(\mathbf{x}^{(t)} = \left(\frac{c-1}{c+1}\right)^t f(\mathbf{x}^{(0)}
+  f(\mathbf{x}^{(t)}) = \left(\frac{c-1}{c+1}\right)^t f(\mathbf{x}^{(0)})
 $$
  and
 $$
@@ -13210,7 +13171,7 @@ for constant step size ($\gamma_t = \gamma \in (0, 1/L]$), a <em>sublinear</em> 
 </li>
 </ol>
 </li>
-<li><p>If we further assume that $f$ is $\alpha$-strongly convex, i.e., $f(\mathbf{x}) - \frac{\alpha}{2}\|\mathbf{x}\|_2^2$ is convex, then
+<li><p>If we further assume that $f$ is $\alpha$-strongly convex, i.e., $f(\mathbf{x}) - \frac{\alpha}{2}\|\mathbf{x}\|_2^2$ is convex for some $\alpha &gt;0$, then
 $$
   f(\mathbf{x}^{(t)}) - p^{\star} \le \frac{L}{2}\left(1 - \gamma\frac{2\alpha L}{\alpha + L}\right)^t \|\mathbf{x}^{(0)} - \mathbf{x}^{\star}\|_2^2
 $$
@@ -13265,7 +13226,7 @@ $$</p>
 </li>
 <li><p>In general, a first-order method generates<br>
 $$
-\mathbf{x}^{(t)} = \mathbf{x}^{(0)} - \sum_{k=1}^{t-1}\gamma_{t,k} \nabla f(\mathbf{x}^{(t)}) =: M_t(f,\mathbf{x}^{(0)}).    
+\mathbf{x}^{(t)} = \mathbf{x}^{(0)} - \sum_{k=1}^{t-1}\gamma_{t,k} \nabla f(\mathbf{x}^{(k)}) =: M_t(f,\mathbf{x}^{(0)}).    
 $$</p>
 </li>
 <li><p>Collection of all first-order method can be considered as the set of all $M_N$. Let's denote it by $\mathcal{M}_N$.</p>
@@ -13294,7 +13255,7 @@ $$
 $$
 suggesting that the minimax optimal rate of first order methods is at most $O(1/N^2)$.</p>
 </li>
-<li><p>This also suggests tbat the $O(1/N)$ rate of GD can be improved.</p>
+<li><p>This also suggests that the $O(1/N)$ rate of GD can be improved.</p>
 </li>
 <li><p>Nesterov's (1983) accelerated gradient method achieves the optimal rate:
 \begin{align*}
@@ -13337,20 +13298,20 @@ $$</p>
 <li><p>The compact set need not be limitted to the $\ell_2$ norm ball in order to obtain a descent direction. For any unit norm ball,
 $$
   \min_{\|\Delta\mathbf{x}\| \le 1} \nabla f(\mathbf{x}^{(t)})^T\Delta\mathbf{x} 
-  = - \|\nabla f(\mathbf{x}^{(t+1)})\|_{\ast}
+  = - \|\nabla f(\mathbf{x}^{(t)})\|_{\ast}
 $$</p>
 </li>
 <li><p>In particular, if $\ell_1$ norm ball is used, then 
 $$
   \min_{\|\Delta\mathbf{x}\|_1 \le 1} \nabla f(\mathbf{x}^{(t)})^T\Delta\mathbf{x} 
-  = - \|\nabla f(\mathbf{x}^{(t)})\|_{\infty} = - \max_{i=1,\dotsc, d} |(\nabla f(\mathbf{x}^{(t)}))_i|
+  = - \|\nabla f(\mathbf{x}^{(t)})\|_{\infty} = - \max_{i=1,\dotsc, d} |[\nabla f(\mathbf{x}^{(t)})]_i|
 $$
 and the descent direction is given by the convex hull of the elementary unit vectors corresponding to the coordinates of the maximum absolute derivatives. In other words,
 $$
-\Delta\mathbf{x} = \sum_{i \in J} \alpha_i \text{sign}((\nabla f(\mathbf{x}^{(t)}))_i)\mathbf{e}_i,
+\Delta\mathbf{x} = \sum_{i \in J} \alpha_i \text{sign}([\nabla f(\mathbf{x}^{(t)})]_i)\mathbf{e}_i,
 \quad \alpha_i \ge 0, ~ \sum_{i \in J} \alpha_i = 1,
 \quad
-J = \{j: |(\nabla f(\mathbf{x}^{(t)}))_j| = \|\nabla f(\mathbf{x}^{(t)})\|_{\infty} \}.
+J = \{j: |[\nabla f(\mathbf{x}^{(t)})]_j| = \|\nabla f(\mathbf{x}^{(t)})\|_{\infty} \}.
 $$</p>
 </li>
 <li><p>Consider a linear regression setting. Assume each coordinate is standardized. If $\alpha_i = 1/|J|$ for $i \in J$, then the $\ell_1$-steepest descent update with a line search strategy of finding the maximal step size with which $J$ does not vary is the least angle regression (LAR). If only one coordinate is chosen and a very small step size $\epsilon$ is used, then this update is $\epsilon$-forward stagewise regression.</p>
@@ -13368,8 +13329,8 @@ $$</p>
 <h2 id="Proximal-gradient-methods">Proximal gradient methods<a class="anchor-link" href="#Proximal-gradient-methods">&#182;</a></h2><h3 id="Constrained-optimization">Constrained optimization<a class="anchor-link" href="#Constrained-optimization">&#182;</a></h3><ul>
 <li><p>Problem
 $$
-\min_{\mathbf{x}\in C \in \mathbb{R}^d} f(\mathbf{x})
-= \min_{\mathbf{x}\subset \mathbb{R}^d} f(\mathbf{x}) + \iota_C(\mathbf{x})
+\min_{\mathbf{x}\in C \subset \mathbb{R}^d} f(\mathbf{x})
+= \min_{\mathbf{x}\in \mathbb{R}^d} f(\mathbf{x}) + \iota_C(\mathbf{x})
 $$
 where $\iota_C(\mathbf{x})$ is the indicator function of the constrained set $C$.</p>
 </li>
@@ -13515,7 +13476,7 @@ A similar rate holds with backtracking.</p>
 </li>
 <li><p>Under the above assumptions and with a constant step size $\gamma_t = \gamma =1/L$,
 $$
-  f(\mathbf{x}^{(t)}) + g(\mathbf{x}^{(t)}) - p^{\star} \le \frac{L}{2(t+1)^2}\|\mathbf{x}^{(0)} - \mathbf{x}^{\star}\|_2^2.   
+  f(\mathbf{x}^{(N)}) + g(\mathbf{x}^{(N)}) - p^{\star} \le \frac{L}{2(N+1)^2}\|\mathbf{x}^{(0)} - \mathbf{x}^{\star}\|_2^2.   
 $$</p>
 </li>
 </ul>
